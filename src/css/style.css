@@ -12,6 +12,20 @@
   --c2: #ededed;
   --c1: #f7f7f7;
   --c0: #ffffff;
+
+  --v10: #001f16;
+  --v9: #003f2b;
+  --v8: #005f41;
+  --v7: #007f56;
+  --v6: #00bf83;
+  --v5: #00ffab;
+  --v4: #33ffbc;
+  --v3: #66ffd1;
+  --v2: #99ffe5;
+  --v1: #ccfff0;
+
+  --grad: linear-gradient(#00ffab, #007f56);
+  --grad1: linear-gradient(var(--v4), var(--v7));
 }
 
 * {
@@ -25,6 +39,15 @@
   text-decoration: none;
   box-sizing: border-box;
   list-style: none;
+}
+
+body {
+  height: 5000px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .header-bg {
@@ -45,6 +68,11 @@
 
 #img-logo {
   padding: 0 40px 0 0;
+  display: inline-block;
+}
+
+#txt-logo {
+  display: inline-block;
 }
 
 .header-menu {
@@ -99,4 +127,154 @@
   #txt-logo {
     display: none;
   }
+}
+
+.introducao-bg {
+  background: linear-gradient(rgba(0 0 0) 40%, rgba(26 26 26) 100%);
+  color: var(--c0);
+  position: relative;
+  box-shadow: 0 -120px inset var(--c0)
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 200px;
+  position: relative;
+
+  & h1 {
+    margin-bottom: 32px;
+    font-size: 64px;
+    line-height: 1.125;
+  }
+
+  & span {
+    color: var(--v5);
+  }
+
+  & p {
+    margin-bottom: 24px;
+    color: var(--c5);
+    line-height: 1.33;
+  }
+
+  & a {
+    padding: 16px 32px;
+    color: var(--v10);
+    background: var(--grad);
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+}
+
+.introducao-conteudo a {
+  position: relative;
+  z-index: 1;
+}
+
+.introducao-conteudo a .movimento-line {
+  content: "";
+  position: absolute;
+  bottom: -3%;
+  left: -30%;
+  width: 30%;
+  height: 3px;
+
+  background: linear-gradient(90deg, transparent, #33ffbc, transparent);
+
+  animation: underlineMove 3s linear infinite;
+  border-radius: 2px;
+
+  filter: drop-shadow(0 0 6px #33ffbc) drop-shadow(0 0 12px #33ffbc)
+    drop-shadow(0 0 24px #33ffbc);
+
+  opacity: 1;
+  pointer-events: none;
+}
+
+@keyframes underlineMove {
+  0% {
+    left: -9%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 77%;
+    opacity: 0;
+  }
+}
+
+.introducao-conteudo a:hover {
+  transform: scale(1.1);
+}
+
+.introducao-conteudo a:hover .movimento-line {
+  animation: none;
+  opacity: 0;
+}
+
+.introducao-conteudo a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: var(--grad1);
+  z-index: -1;
+  transition: height 0.3s ease;
+  border-radius: 8px;
+
+  filter: drop-shadow(0 0 1px rgba(51, 255, 187, 0.5))
+    drop-shadow(0 0 2px rgba(51, 255, 187, 0.5))
+    drop-shadow(0 0 30px rgba(51, 255, 187, 0.5));
+
+  opacity: 1;
+  pointer-events: none;
+}
+
+.introducao-conteudo a:hover::before {
+  height: 100%;
+}
+
+.introducao-img {
+  & img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.introducao-conteudo::after {
+  content: "";
+  width: 2px;
+  height: 65%;
+  background: var(--v5);
+  position: absolute;
+  right: -2%;
+  top: 1%;
+  box-shadow: 0 0 80px 10px rgba(0, 255, 170, 0.705);
 }
