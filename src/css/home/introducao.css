@@ -9,7 +9,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
-
 }
 
 .introducao-conteudo {
@@ -64,11 +63,6 @@
   }
 }
 
-.introducao-conteudo .btn:hover .movimento-line {
-  animation: none;
-  opacity: 0;
-}
-
 .introducao-conteudo .btn::before {
   content: "";
   position: absolute;
@@ -78,7 +72,7 @@
   height: 0%;
   background: var(--grad1);
   z-index: -1;
-  transition: height 0.3s ease;
+  transition: height 0.2s ease;
   border-radius: 8px;
 
   filter: drop-shadow(0 0 1px rgba(51, 255, 187, 0.5))
@@ -129,6 +123,15 @@
   .introducao-conteudo {
     padding-bottom: 40px;
     position: relative;
+
+    & .btn.btn:hover::before {
+      display: none;
+    }
+
+    .introducao-conteudo .btn:hover .movimento-line {
+      animation: underlineMove 3s linear infinite;
+      opacity: 100%;
+    }
   }
 
   .introducao-conteudo::after {
@@ -166,7 +169,7 @@
   }
 }
 
-@media (max-width:440px) {
+@media (max-width: 440px) {
   .introducao-conteudo h1::after {
     left: 28%;
     width: 52%;
