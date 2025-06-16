@@ -9,9 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+
 }
 
 .introducao-conteudo {
@@ -116,7 +114,6 @@
 
 @media (max-width: 800px) {
   .introducao-bg {
-    background: var(--c11);
     padding-top: 20px;
   }
   .introducao h1 {
@@ -131,13 +128,14 @@
 
   .introducao-conteudo {
     padding-bottom: 40px;
+    position: relative;
   }
 
   .introducao-conteudo::after {
-    top: -47%;
-    left: 30%;
+    top: 1%;
+    left: 18%;
     transform: rotate(90deg);
-    height: 125%;
+    height: 62%;
   }
 }
 
@@ -152,9 +150,9 @@
 
   .introducao-conteudo h1::after {
     content: "";
-    width: 80%;
+    width: 45%;
     height: 2px;
-    top: 13%;
+    top: 30%;
     left: 0;
     background: var(--v5);
     position: absolute;
@@ -168,7 +166,14 @@
   }
 }
 
-@media (max-width: 385px) {
+@media (max-width:440px) {
+  .introducao-conteudo h1::after {
+    left: 28%;
+    width: 52%;
+  }
+}
+
+@media (max-width: 390px) {
   .introducao-img img {
     height: 40dvh;
   }
@@ -178,26 +183,26 @@
   }
 
   .introducao-conteudo h1::after {
-    width: 40%;
-    left: 3%;
-    top: 12%;
+    width: 56%;
+    left: 32%;
+    top: 28%;
   }
 }
 
-@media (max-width: 355px) {
+@media (max-width: 360px) {
   .introducao-conteudo h1 {
     width: 70%;
   }
 
   .introducao-conteudo h1::after {
-    width: 35%;
+    width: 62%;
     left: 1%;
-    top: 19%;
+    top: 35%;
   }
 }
 
 @media (max-width: 322px) {
   .introducao-conteudo h1::after {
-    width: 57%;
+    width: 70%;
   }
 }
