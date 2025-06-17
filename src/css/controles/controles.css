@@ -59,6 +59,12 @@
   }
 }
 
+@media (max-width: 1610px) {
+  .controle-bg {
+    padding: 40px 20px 80px;
+  }
+}
+
 @media (max-width: 1500px) {
   .controle-bg {
     padding: 40px 20px;
@@ -102,6 +108,11 @@
   .controle-funcoes {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .controle-conteudo {
+    & > h2 {
+      margin-bottom: 40px;
+    }
   }
 }
 
