@@ -99,20 +99,20 @@
 }
 
 @media (max-width: 530px) {
-    .controle-funcoes {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
+  .controle-funcoes {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 @media (max-width: 400px) {
-    .controle-bg {
-        padding: 40px 20px 60px;
-    }
+  .controle-bg {
+    padding: 40px 20px 60px;
+  }
 }
 
 @media (max-width: 330px) {
-    .controle-conteudo > h2 {
-        width: 94%;
-    }
+  .controle-conteudo > h2 {
+    width: 94%;
+  }
 }
