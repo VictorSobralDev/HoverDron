@@ -76,14 +76,14 @@
     }
   }
 }
- 
-@media (max-width:800px) {
+
+@media (max-width: 800px) {
   .font-0-g {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .font-2-m1 {
     font-size: 0.875rem;
   }
@@ -92,5 +92,14 @@
   }
   .font-2-m2 {
     font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-2-m1 {
+    font-size: 0.75rem;
+  }
+  .font-2-m2 {
+    font-size: 1.125rem;
   }
 }
