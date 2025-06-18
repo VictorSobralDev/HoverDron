@@ -52,6 +52,10 @@
       padding: 60px 40px 40px;
     }
   }
+  .curso-funcoes {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
 @media (max-width: 900px) {
@@ -61,6 +65,7 @@
       gap: 0px;
     }
   }
+
   .curso-img {
     align-items: baseline;
     height: 50%;
