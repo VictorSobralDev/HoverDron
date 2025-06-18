@@ -93,6 +93,12 @@
   .font-2-m2 {
     font-size: 1.25rem;
   }
+  .font-1-p1 {
+    font-size: 1.125rem;
+  }
+  .font-2-p2 {
+    font-size: 0.875rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -100,6 +106,15 @@
     font-size: 0.75rem;
   }
   .font-2-m2 {
-    font-size: 1.125rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .font-1-p1 {
+    font-size: 1rem;
+  }
+  .font-2-p2 {
+    font-size: 0.75rem;
   }
 }

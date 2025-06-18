@@ -15,4 +15,7 @@
 @import "./drones/drones-lista.css";
 
 /* Controles */
-@import "./controles/controles.css";
+@import "./home/controles.css";
+
+/* Area treinamento */
+@import "./home/curso.css";

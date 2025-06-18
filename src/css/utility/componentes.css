@@ -52,3 +52,15 @@
     color: var(--c0);
     transform: scale(1.1);
   }
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+}
