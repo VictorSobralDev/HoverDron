@@ -1,0 +1,173 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 70dvh;
+}
+
+.depoimento-img {
+  background-image: url(../../assets/Adicionais/depoimento.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.depoimento-conteudo {
+  background-color: var(--v6);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  & blockquote {
+    text-indent: 40px;
+    margin-bottom: 80px;
+    position: relative;
+  }
+}
+
+blockquote::before {
+  content: "‘‘";
+  color: var(--v8);
+  font-size: 5rem;
+  position: absolute;
+  top: -20px;
+  left: -45px;
+}
+
+blockquote::after {
+  content: "’’";
+  color: var(--v8);
+  font-size: 5rem;
+  position: absolute;
+  bottom: -40%;
+  right: 30%;
+}
+
+@media (min-width: 2000px) {
+  .depoimento {
+    height: 40dvh;
+  }
+}
+
+@media (min-width: 2800px) {
+  .depoimento {
+    height: 30dvh;
+  }
+  blockquote {
+    width: 70%;
+  }
+  blockquote::after {
+    left: 30%;
+  }
+}
+@media (max-width: 1700px) {
+  blockquote::after {
+    bottom: -23%;
+    right: 15%;
+  }
+}
+
+@media (max-width: 1590px) {
+  blockquote {
+    width: 100%;
+  }
+  blockquote::after {
+    right: 0;
+    bottom: -25%;
+  }
+}
+@media (max-width: 1500px) {
+  blockquote {
+    width: 80%;
+  }
+  blockquote::after {
+    right: 40%;
+  }
+}
+@media (max-width: 1400px) {
+  blockquote {
+    width: 100%;
+  }
+}
+@media (max-width: 1300px) {
+  blockquote {
+    padding-top: 40px;
+    width: 90%;
+  }
+  blockquote::before {
+    top: 0;
+  }
+  blockquote::after {
+    right: 10%;
+  }
+}
+@media (max-width: 1200px) {
+  .depoimento-img {
+    background-position: 70% 50%;
+  }
+  blockquote::after {
+    right: 30%;
+  }
+}
+@media (max-width: 900px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+  }
+  .depoimento-img {
+    height: 50dvh;
+    grid-area: 2;
+  }
+  blockquote::after {
+    right: 0;
+  }
+}
+@media (max-width: 630px) {
+  blockquote::after {
+    right: 40%;
+  }
+}
+@media (max-width: 530px) {
+  .depoimento-img {
+    height: 35dvh;
+    background-size: cover;
+  }
+  .depoimento-conteudo {
+    & blockquote {
+      margin-bottom: 40px;
+    }
+  }
+  blockquote::before,
+  blockquote::after {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 400px) {
+  .depoimento-conteudo {
+    & blockquote {
+      text-indent: 20px;
+    }
+    blockquote::before,
+    blockquote::after {
+      font-size: 3rem;
+    }
+  }
+  .depoimento {
+    height: 30dvh;
+  }
+  blockquote::before {
+    top: 10%;
+  }
+  blockquote::after {
+    right: 40%;
+  }
+}
+@media (max-width: 365px) {
+  blockquote::after {
+    right: -10%;
+  }
+}
+@media (max-width: 355px) {
+  blockquote::after {
+    right: 40%;
+  }
+}

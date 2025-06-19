@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@1,18..144,900&display=swap');
 
 .font-0-g {
   font: 4rem/1.125 "Audiowide", sans-serif;
@@ -64,6 +65,9 @@
 .font-2-p4 {
   font: 500 0.75rem/1.333 "Inter", sans-serif;
 }
+.font-3 {
+  font: 900 2.25rem/1.333 "Merriweather", serif;
+}
 
 @media (max-width: 1200px) {
   .introducao {
@@ -75,11 +79,19 @@
       font-size: 1.125rem;
     }
   }
+  .font-3 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 800px) {
   .font-0-g {
     font-size: 2rem;
+  }
+}
+@media (max-width: 630px) {
+  .font-3 {
+    font-size: 1.75rem;
   }
 }
 
@@ -99,6 +111,12 @@
   .font-2-p2 {
     font-size: 0.875rem;
   }
+  .font-1-m3-sb {
+    font-size: 1rem;
+  }
+  .font-3 {
+      font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -108,8 +126,16 @@
   .font-2-m2 {
     font-size: 1rem;
   }
+  .font-3 {
+    font-size: 1rem;
+  }
 }
+@media (max-width: 365px) {
 
+  .font-1-m3-sb {
+    font-size: 0.875rem;
+  }
+}
 @media (max-width: 330px) {
   .font-1-p1 {
     font-size: 1rem;
