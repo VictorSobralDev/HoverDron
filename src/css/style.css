@@ -1,24 +1,18 @@
+/* Global */
 @import "./global/global.css";
-@import "./utility/tipografia.css";
-@import "./utility/cores.css";
+@import "./global/header.css";
 
 /* Utilidades */
+@import "./utility/tipografia.css";
+@import "./utility/cores.css";
 @import "./utility/componentes.css";
-
-/* Cabeçalho */
-@import "./global/header.css";
 
 /* Home */
 @import "./home/introducao.css";
-
-/* Lista */
 @import "./drones/drones-lista.css";
-
-/* Controles */
 @import "./home/controles.css";
-
-/* Area treinamento */
 @import "./home/curso.css";
-
-/* Depoimento */
 @import "./home/depoimento.css";
+
+/* Planos */
+@import "./planos/planos.css";

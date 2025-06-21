@@ -164,12 +164,6 @@
   }
 }
 
-@media (max-width: 480px) {
-  .container-header {
-    padding: 16px 20px;
-  }
-}
-
 @media (max-width: 440px) {
   .introducao-conteudo h1::after {
     left: 28%;

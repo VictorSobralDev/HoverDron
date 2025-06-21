@@ -85,6 +85,9 @@ blockquote::after {
   }
 }
 @media (max-width: 1400px) {
+  .depoimento {
+    height: max-content;
+  }
   blockquote {
     width: 100%;
   }
@@ -112,15 +115,26 @@ blockquote::after {
 @media (max-width: 900px) {
   .depoimento {
     grid-template-columns: 1fr;
+    height: max-content;
   }
   .depoimento-img {
-    height: 50dvh;
+    height: 40dvh;
     grid-area: 2;
+
+    & img {
+      display: block;
+    }
   }
   blockquote::after {
     right: 0;
   }
 }
+@media (max-width: 830px) {
+  .depoimento-img {
+    height: 40dvh;
+  }
+}
+
 @media (max-width: 630px) {
   blockquote::after {
     right: 40%;
@@ -128,7 +142,7 @@ blockquote::after {
 }
 @media (max-width: 530px) {
   .depoimento-img {
-    height: 35dvh;
+    height: 32dvh;
     background-size: cover;
   }
   .depoimento-conteudo {
@@ -150,9 +164,6 @@ blockquote::after {
     blockquote::after {
       font-size: 3rem;
     }
-  }
-  .depoimento {
-    height: 30dvh;
   }
   blockquote::before {
     top: 10%;
