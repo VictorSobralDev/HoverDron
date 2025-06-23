@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_82_56)">
+<path d="M32 16C32 7.1625 24.8375 0 16 0C7.1625 0 0 7.1625 0 16C0 23.5 5.16875 29.8 12.1375 31.5312V20.8875H8.8375V16H12.1375V13.8938C12.1375 8.45 14.6 5.925 19.95 5.925C20.9625 5.925 22.7125 6.125 23.4312 6.325V10.75C23.0562 10.7125 22.4 10.6875 21.5812 10.6875C18.9562 10.6875 17.9438 11.6812 17.9438 14.2625V16H23.1688L22.2687 20.8875H17.9375V31.8813C25.8625 30.925 32 24.1812 32 16Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_82_56">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

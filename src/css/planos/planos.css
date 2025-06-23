@@ -2,6 +2,10 @@
   background-color: #1a1a1a;
   padding: 40px 20px 60px;
 
+  & .container {
+    padding: 0;
+  }
+
   & h2 {
     margin-bottom: 60px;
   }
@@ -70,6 +74,10 @@
 }
 
 @media (max-width: 1200px) {
+  .planos-bg {
+    background-color: #1a1a1a;
+    padding: 40px 40px 60px;
+  }
   .planos-container {
     gap: 20px;
   }
@@ -84,10 +92,11 @@
   }
 }
 
-@media (max-width: 860px) {
-}
-
 @media (max-width: 630px) {
+  .planos-bg {
+    background-color: #1a1a1a;
+    padding: 40px 20px 60px;
+  }
   .planos-container {
     width: 85%;
   }
