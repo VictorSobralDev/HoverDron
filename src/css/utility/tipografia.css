@@ -6,7 +6,6 @@
 .font-0-g {
   font: 4rem/1.125 "Audiowide", sans-serif;
 }
-
 .font-1-g1 {
   font: 600 4rem/1.125 "Poppins", sans-serif;
 }
@@ -56,6 +55,9 @@
 .font-2-m2 {
   font: 400 1.5rem/1.33 "Inter", sans-serif;
 }
+.font-2-m2-sb {
+  font: 600 1.5rem/1.33 "Inter", sans-serif;
+}
 .font-2-m3 {
   font: 700 1.25rem/1.2 "Inter", sans-serif;
 }
@@ -64,6 +66,9 @@
 }
 .font-2-p2 {
   font: 500 1rem/1.5 "Inter", sans-serif;
+}
+.font-2-p2-reg {
+  font: 400 1rem/1.5 "Inter", sans-serif;
 }
 .font-2-p3 {
   font: 400 0.875rem/1.42 "Inter", sans-serif;
@@ -76,14 +81,13 @@
 }
 
 @media (max-width: 1200px) {
-  .introducao {
-    & .font-0-g {
-      font-size: 3rem;
-    }
+  .font-0-g {
+    font-size: 3rem;
+  }
 
-    & .font-2-m2 {
-      font-size: 1.125rem;
-    }
+  .font-2-m2,
+  .font-2-m2-sb {
+    font-size: 1.25rem;
   }
   .font-3 {
     font-size: 2rem;
@@ -98,7 +102,7 @@
 
 @media (max-width: 800px) {
   .font-0-g {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 630px) {
@@ -108,26 +112,33 @@
 }
 
 @media (max-width: 530px) {
+  .font-0-g {
+    font-size: 2.5rem;
+  }
   .font-2-m1 {
     font-size: 0.875rem;
   }
-  .font-1-g2, .font-1-g1 {
+  .font-1-g2,
+  .font-1-g1 {
     font-size: 2.25rem;
   }
   .font-1-m1-b {
     font-size: 1.5rem;
   }
-  .font-2-m2 {
-    font-size: 1.25rem;
+  .font-2-m2,
+  .font-2-m2-sb {
+    font-size: 1.125rem;
   }
   .font-1-p1 {
     font-size: 1.125rem;
   }
-  .font-2-p2 {
+  .font-2-p2,
+  .font-2-p2-reg {
     font-size: 0.875rem;
   }
-  .font-1-m3-sb, .font-1-m3-b {
-    font-size: 1rem;
+  .font-1-m3-sb,
+  .font-1-m3-b {
+    font-size: 1.125rem;
   }
   .font-3 {
     font-size: 1.5rem;
@@ -135,10 +146,14 @@
 }
 
 @media (max-width: 400px) {
+  .font-0-g {
+    font-size: 1.875rem;
+  }
   .font-2-m1 {
     font-size: 0.75rem;
   }
-  .font-2-m2 {
+  .font-2-m2,
+  .font-2-m2-sb {
     font-size: 1rem;
   }
   .font-3 {
@@ -146,7 +161,7 @@
   }
 }
 @media (max-width: 365px) {
-  .font-1-m3-sb, .font-1-m3-b {
+  .font-1-m3-b {
     font-size: 0.875rem;
   }
 }
@@ -154,7 +169,8 @@
   .font-1-p1 {
     font-size: 1rem;
   }
-  .font-2-p2 {
+  .font-2-p2,
+  .font-2-p2-reg {
     font-size: 0.75rem;
   }
 }
