@@ -13,6 +13,10 @@
   color: inherit;
 }
 
+body {
+  background-color: var(--c0);
+}
+
 img {
   display: block;
   max-width: 100%;
