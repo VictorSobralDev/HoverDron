@@ -75,19 +75,19 @@
 }
 
 @media (max-width: 630px) {
-    .curso-bg {
-        & .container {
-          padding: 60px 20px;
-        }
-      }
-    .curso-img {
-        width: 90%;
+  .curso-bg {
+    & .container {
+      padding: 60px 20px;
     }
+  }
+  .curso-img {
+    width: 90%;
+  }
 }
 
-@media (max-width:530px) {
-    .curso-funcoes {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
+@media (max-width: 530px) {
+  .curso-funcoes {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }

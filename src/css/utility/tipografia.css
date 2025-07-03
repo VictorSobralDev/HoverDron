@@ -15,6 +15,9 @@
 .font-1-m1-b {
   font: 700 2.25rem/1.111 "Poppins", sans-serif;
 }
+.font-1-m1-sb {
+  font: 600 2.25rem/1.111 "Poppins", sans-serif;
+}
 .font-1-m2-b {
   font: 700 2rem/1 "Poppins", sans-serif;
 }
@@ -84,19 +87,19 @@
   .font-0-g {
     font-size: 3rem;
   }
-
+  .font-1-m1-b,
+  .font-1-m1-sb {
+    font-size: 1.875rem;
+  }
+  .font-1-m3-b {
+    font-size: 1.125rem;
+  }
   .font-2-m2,
   .font-2-m2-sb {
     font-size: 1.25rem;
   }
   .font-3 {
     font-size: 2rem;
-  }
-  .font-1-m1-b {
-    font-size: 1.875rem;
-  }
-  .font-1-m3-b {
-    font-size: 1.125rem;
   }
 }
 
@@ -115,30 +118,37 @@
   .font-0-g {
     font-size: 2.5rem;
   }
-  .font-2-m1 {
-    font-size: 0.875rem;
-  }
-  .font-1-g2,
-  .font-1-g1 {
+  .font-1-g1,
+  .font-1-g2 {
     font-size: 2.25rem;
   }
-  .font-1-m1-b {
+  .font-1-m1-b,
+  .font-1-m1-sb {
     font-size: 1.5rem;
   }
-  .font-2-m2,
-  .font-2-m2-sb {
+  .font-1-m3-sb,
+  .font-1-m3-b {
     font-size: 1.125rem;
   }
   .font-1-p1 {
     font-size: 1.125rem;
   }
+  .font-1-p3 {
+    font-size: 0.875rem;
+  }
+  .font-1-p4 {
+    font-size: 1rem;
+  }
+  .font-2-m1 {
+    font-size: 0.875rem;
+  }
+  .font-2-m2,
+  .font-2-m2-sb {
+    font-size: 1.125rem;
+  }
   .font-2-p2,
   .font-2-p2-reg {
     font-size: 0.875rem;
-  }
-  .font-1-m3-sb,
-  .font-1-m3-b {
-    font-size: 1.125rem;
   }
   .font-3 {
     font-size: 1.5rem;

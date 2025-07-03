@@ -8,9 +8,12 @@
 @import "./utility/cores.css";
 @import "./utility/componentes.css";
 
+/* Drones */
+@import "./drones/drones-lista.css";
+@import "./drones/drones.css";
+
 /* Home */
 @import "./home/introducao.css";
-@import "./drones/drones-lista.css";
 @import "./home/controles.css";
 @import "./home/curso.css";
 @import "./home/depoimento.css";

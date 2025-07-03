@@ -107,22 +107,18 @@
   box-shadow: 0 0 80px 10px rgba(0, 255, 170, 0.705);
 }
 
-
 @media (max-width: 800px) {
-  .introducao-bg {
-    padding-top: 20px;
-  }
   .introducao h1 {
     margin-bottom: 16px;
   }
 }
 
 @media (min-width: 651px) {
- .introducao {
-   & .sublinhado::after {
-    display: none;
+  .introducao {
+    & .sublinhado::after {
+      display: none;
+    }
   }
- }
 }
 
 @media (max-width: 650px) {
