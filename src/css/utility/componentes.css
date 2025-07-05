@@ -78,7 +78,7 @@
 
 /* Titulos paginas internas */
 .titulo-bg {
-  background-color: var(--c11);
+  background-color: var(--c12);
   padding: 60px 0;
 }
 
@@ -88,7 +88,7 @@
 
 @media (max-width: 800px) {
   .titulo-bg {
-    padding: 40px 0;
+    padding: 10px 0 40px;
   }
 
   .titulo p {
@@ -99,14 +99,17 @@
 .sublinhado {
   width: max-content;
   display: inline-block;
+  position: relative;
+  z-index: 1;
 }
 
 .sublinhado::after {
   content: "";
+  position: relative;
   display: block;
   width: 100%;
   height: 2px;
   background-color: var(--v5);
   box-shadow: 0 0 80px 10px rgba(0, 255, 170, 0.705);
-  z-index: 1;
+  z-index: 2;
 }

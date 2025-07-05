@@ -7,7 +7,7 @@
 }
 
 .drones-bg3 {
-  background-image: linear-gradient(to right, var(--c0) 40%, #333333 0%);
+  background-image: linear-gradient(to right, var(--c0) 38%, #333333 0%);
 }
 
 .drones-container {
@@ -94,22 +94,31 @@
 }
 
 @media (max-width: 900px) {
+  .drones-container {
+    gap: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .drones-bg1 {
-    background-image: linear-gradient(var(--c11) 0%);
+    background: #000;
+    background: linear-gradient(0deg, #121212 80%, #000000 100%);
   }
 
   .drones-bg2 {
-    background-image: linear-gradient(#262626 0%);
+    background: #121212;
+    background: linear-gradient(0deg, #262626 80%, #121212 100%);
   }
 
   .drones-bg3 {
-    background-image: linear-gradient(#333333 0%);
+    background: #262626;
+    background: linear-gradient(0deg, #333333 80%, #262626 100%);
   }
   .drones {
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -120,6 +129,10 @@
 }
 
 @media (max-width: 530px) {
+  .drones {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .drones-conteudo {
     grid-template-columns: 1fr;
 
@@ -131,5 +144,15 @@
       margin-bottom: 32px;
       gap: 8px;
     }
+
+    & p {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (max-width:410px) {
+  .drones {
+    padding-top: 16px;
   }
 }
