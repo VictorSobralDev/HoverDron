@@ -1,0 +1,119 @@
+.hoverdron-bg {
+  background: linear-gradient(0deg, #1f1f1f 0%, var(--c12) 100%);
+}
+.hoverdron {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+.hoverdron-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  & img {
+    flex: 1;
+    min-width: 270px;
+  }
+
+  & img:first-child {
+    min-width: 100%;
+  }
+}
+
+.hoverdron-conteudo {
+  display: grid;
+  height: 100%;
+  align-items: start;
+
+  & p {
+    margin-bottom: 32px;
+  }
+
+  & h2 {
+    letter-spacing: 0.15em;
+    margin-bottom: 12px;
+  }
+
+  & .titulo-controle {
+    height: 100%;
+    width: max-content;
+    align-content: end;
+
+    & h2 {
+      letter-spacing: 0;
+      margin-bottom: 0;
+      padding: 8px 0;
+    }
+  }
+}
+
+.hoverdron-comprar {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 8px 32px;
+  margin-bottom: 40px;
+
+  & a {
+    grid-row: span 2;
+  }
+
+  & span {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: var(--c12);
+    padding: 4px 8px;
+    border-radius: 10px;
+  }
+}
+
+.hoverdron-info,
+.hoverdron-ficha {
+  padding: 32px;
+  background-color: var(--c12);
+  border-radius: 8px;
+}
+
+.hoverdron-info {
+  margin-bottom: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+
+  & img {
+    margin-bottom: 8px;
+  }
+
+  & h3 {
+    margin-bottom: 8px;
+  }
+}
+
+.hoverdron-ficha {
+  & li {
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--c11);
+  }
+
+  & li:last-child {
+    border-bottom: none;
+  }
+
+  & span {
+    color: var(--c6);
+  }
+}
+
+.dron-pad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

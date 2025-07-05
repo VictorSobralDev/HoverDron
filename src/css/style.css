@@ -12,6 +12,9 @@
 @import "./drones/drones-lista.css";
 @import "./drones/drones.css";
 
+/* HoverDron */
+@import "./hoverdron/hoverdron.css";
+
 /* Home */
 @import "./home/introducao.css";
 @import "./home/controles.css";
@@ -20,6 +23,8 @@
 
 /* Planos */
 @import "./planos/planos.css";
+@import "./planos/servicos.css";
+@import "./planos/duvidas.css";
 
 /* Termos  */
 @import "./termos/termos.css";

@@ -1,0 +1,62 @@
+.duvidas {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  & h2 {
+    margin-bottom: 24px;
+  }
+
+  & dl > div {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  & dl > div:nth-child(odd) {
+    background-color: var(--c1);
+  }
+
+  & dt::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background-color: var(--v5);
+  }
+
+  & dt::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 6px;
+    background-image: url(../../assets/Logo\ &\ Icones/seta.svg);
+  }
+
+  & dt {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  & dd {
+    padding-left: 20px;
+    padding-top: 12px;
+    max-width: 80ch;
+  }
+}
+
+@media (max-width: 900px) {
+  .duvidas {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    & dt {
+        gap: 12px;
+    }
+
+    & dd {
+        padding-left: 24px;
+    }
+  }
+}

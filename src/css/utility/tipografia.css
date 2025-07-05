@@ -51,7 +51,9 @@
 .font-1-p7 {
   font: 700 0.75rem/2 "Poppins", sans-serif;
 }
-
+.font-2-g1 {
+  font: 600 2.25rem/1.333 "Inter", sans-serif;
+}
 .font-2-m1 {
   font: 700 1.5rem/2 "Inter", sans-serif;
 }
