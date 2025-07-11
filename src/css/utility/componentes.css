@@ -32,6 +32,67 @@
   color: var(--c12);
 }
 
+.btn .movimento-line {
+  content: "";
+  position: absolute;
+  bottom: -3%;
+  left: -30%;
+  width: 30%;
+  height: 3px;
+
+  background: linear-gradient(90deg, transparent, #33ffbc, transparent);
+
+  animation: underlineMove 3s linear infinite;
+  border-radius: 2px;
+
+  filter: drop-shadow(0 0 6px #33ffbc) drop-shadow(0 0 12px #33ffbc)
+    drop-shadow(0 0 24px #33ffbc);
+
+  opacity: 1;
+  pointer-events: none;
+}
+
+@keyframes underlineMove {
+  0% {
+    left: -9%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 77%;
+    opacity: 0;
+  }
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: var(--grad1);
+  z-index: -1;
+  transition: height 0.2s ease;
+  border-radius: 8px;
+
+  filter: drop-shadow(0 0 1px rgba(51, 255, 187, 0.5))
+    drop-shadow(0 0 2px rgba(51, 255, 187, 0.438))
+    drop-shadow(0 0 20px rgba(51, 255, 187, 0.144));
+
+  opacity: 1;
+  pointer-events: none;
+}
+
+.btn:hover::before {
+  height: 100%;
+}
+
 @media (max-width: 600px) {
   .btn {
     padding: 12px 16px;
@@ -70,6 +131,17 @@
   }
 }
 
+@media (max-width: 650px) {
+  .btn.btn:hover::before {
+    display: none;
+  }
+
+  .btn:hover .movimento-line {
+    animation: underlineMove 3s linear infinite;
+    opacity: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .container {
     padding: 0 20px;
@@ -79,7 +151,7 @@
 /* Titulos paginas internas */
 .titulo-bg {
   background-color: var(--c12);
-  padding: 60px 0;
+  padding: 60px 0 40px;
 }
 
 .titulo p {
@@ -88,7 +160,7 @@
 
 @media (max-width: 800px) {
   .titulo-bg {
-    padding: 10px 0 40px;
+    padding: 10px 0 20px;
   }
 
   .titulo p {
@@ -112,4 +184,5 @@
   background-color: var(--v5);
   box-shadow: 0 0 80px 10px rgba(0, 255, 170, 0.705);
   z-index: 2;
+  margin-top: 2px;
 }

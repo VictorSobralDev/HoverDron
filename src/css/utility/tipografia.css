@@ -109,9 +109,18 @@
   .font-0-g {
     font-size: 2.5rem;
   }
+  .font-2-g1 {
+    font-size: 2rem;
+  }
+  .font-1-m2-b {
+    font-size: 1.875rem;
+  }
 }
 @media (max-width: 630px) {
   .font-3 {
+    font-size: 1.75rem;
+  }
+  .font-1-m2-b {
     font-size: 1.75rem;
   }
 }
@@ -130,6 +139,9 @@
   .font-1-m1-sb {
     font-size: 1.25rem;
   }
+  .font-1-m2-b {
+    font-size: 1.5rem;
+  }
   .font-1-m3-sb,
   .font-1-m3-b {
     font-size: 1.125rem;
@@ -143,12 +155,18 @@
   .font-1-p4 {
     font-size: 1rem;
   }
+  .font-2-g1 {
+    font-size: 1.875rem;
+  }
   .font-2-m1 {
     font-size: 0.875rem;
   }
   .font-2-m2,
   .font-2-m2-sb {
     font-size: 1.125rem;
+  }
+  .font-2-m3 {
+    font-size: 1rem;
   }
   .font-2-p1 {
     font-size: 1rem;
@@ -164,7 +182,10 @@
 
 @media (max-width: 400px) {
   .font-0-g {
-    font-size: 1.875rem;
+    font-size: 2rem;
+  }
+  .font-2-g1 {
+    font-size: 1.5rem;
   }
   .font-2-m1 {
     font-size: 0.75rem;

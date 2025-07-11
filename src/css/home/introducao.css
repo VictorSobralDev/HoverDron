@@ -26,67 +26,6 @@
   }
 }
 
-.introducao-conteudo .btn .movimento-line {
-  content: "";
-  position: absolute;
-  bottom: -3%;
-  left: -30%;
-  width: 30%;
-  height: 3px;
-
-  background: linear-gradient(90deg, transparent, #33ffbc, transparent);
-
-  animation: underlineMove 3s linear infinite;
-  border-radius: 2px;
-
-  filter: drop-shadow(0 0 6px #33ffbc) drop-shadow(0 0 12px #33ffbc)
-    drop-shadow(0 0 24px #33ffbc);
-
-  opacity: 1;
-  pointer-events: none;
-}
-
-@keyframes underlineMove {
-  0% {
-    left: -9%;
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    left: 77%;
-    opacity: 0;
-  }
-}
-
-.introducao-conteudo .btn::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: var(--grad1);
-  z-index: -1;
-  transition: height 0.2s ease;
-  border-radius: 8px;
-
-  filter: drop-shadow(0 0 1px rgba(51, 255, 187, 0.5))
-    drop-shadow(0 0 2px rgba(51, 255, 187, 0.5))
-    drop-shadow(0 0 30px rgba(51, 255, 187, 0.5));
-
-  opacity: 1;
-  pointer-events: none;
-}
-
-.introducao-conteudo .btn:hover::before {
-  height: 100%;
-}
-
 .introducao-img {
   & img {
     width: 100%;
@@ -133,15 +72,6 @@
   .introducao-conteudo {
     padding-bottom: 40px;
     position: relative;
-
-    & .btn.btn:hover::before {
-      display: none;
-    }
-
-    .introducao-conteudo .btn:hover .movimento-line {
-      animation: underlineMove 3s linear infinite;
-      opacity: 100%;
-    }
   }
 }
 
