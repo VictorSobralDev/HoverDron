@@ -11,6 +11,7 @@
 /* Drones */
 @import "./drones/drones-lista.css";
 @import "./drones/drones.css";
+@import "./drones/hoverdron-plano.css";
 
 /* HoverDron */
 @import "./hoverdron/hoverdron.css";
