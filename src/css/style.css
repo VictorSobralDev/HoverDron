@@ -27,5 +27,11 @@
 @import "./planos/servicos.css";
 @import "./planos/duvidas.css";
 
+/* Contato */
+@import "./contato/contato.css";
+
+/* Formulario */
+@import "./formulario/formulario.css";
+
 /* Termos  */
 @import "./termos/termos.css";
