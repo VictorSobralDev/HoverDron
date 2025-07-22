@@ -45,7 +45,8 @@
     position: absolute;
   }
 
-  & a:hover:after {
+  & a:hover:after,
+  & a.ativo::after {
     width: 100%;
   }
 }
