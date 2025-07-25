@@ -15,7 +15,19 @@
     background-color: var(--c1);
   }
 
-  & dt::before {
+  & button {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  & button::before {
     content: "";
     display: inline-block;
     width: 12px;
@@ -23,20 +35,26 @@
     background-color: var(--v5);
   }
 
-  & dt::after {
+  & button::after {
     content: "";
     display: inline-block;
     width: 14px;
     height: 6px;
     background-image: url(../../assets/Logo\ &\ Icones/seta.svg);
+    transition: 0.3s;
   }
 
-  & dt {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
+  & button:hover::after,
+  & button[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+  }
+
+  & dd {
+    display: none;
+  }
+
+  & dd.ativa {
+    display: block;
   }
 
   & dd {
@@ -51,12 +69,12 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    & dt {
-        gap: 12px;
+    & button {
+      gap: 12px;
     }
 
     & dd {
-        padding-left: 24px;
+      padding-left: 24px;
     }
   }
 }
