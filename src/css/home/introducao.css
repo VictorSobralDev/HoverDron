@@ -38,12 +38,18 @@
 .introducao-conteudo::after {
   content: "";
   width: 2px;
-  height: 65%;
+  height: 0%;
   background: var(--v5);
   position: absolute;
   right: -2%;
   top: 1%;
   box-shadow: 0 0 80px 10px rgba(0, 255, 170, 0.705);
+  transition: height ease-in 0.3s;
+  z-index: 2;
+}
+
+.introducao-conteudo.carregado::after {
+  height: 65%;
 }
 
 @media (max-width: 800px) {

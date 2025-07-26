@@ -185,4 +185,12 @@
   box-shadow: 0 0 80px 10px rgba(0, 255, 170, 0.705);
   z-index: 2;
   margin-top: 2px;
+  transition: width ease-in 0.3s;
+}
+
+.js .sublinhado::after {
+  width: 0%;
+}
+.js .sublinhado.carregado::after {
+  width: 100%;
 }

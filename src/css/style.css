@@ -1,12 +1,13 @@
-/* Global */
-@import "./global/global.css";
-@import "./global/header.css";
-@import "./global/footer.css";
-
 /* Utilidades */
 @import "./utility/tipografia.css";
 @import "./utility/cores.css";
 @import "./utility/componentes.css";
+@import "./utility/animacoes.css";
+
+/* Global */
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
 
 /* Drones */
 @import "./drones/drones-lista.css";

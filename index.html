@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HoverDron - Drones Profissionais</title>
     <meta name="description" content="Modelos de alta precisão e qualidade, desenvolvidos para quem busca a melhor experiência de voo. Descubra novas perspectivas com a HoverDron. Drones projetados para velocidade, estabilidade e performance profissional.">
+    <link rel="shortcut icon" href="./src/assets/Logo & Icones/Logo.svg" type="image/x-icon">
     <link rel="preload" href="./src/css/style.css" as="style">
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="shortcut icon" href="./src/assets/Logo & Icones/Logo.svg" type="image/x-icon">
+
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -34,20 +36,20 @@
     <main class="introducao-bg">
         <div class="introducao container">
             <div class="introducao-conteudo">
-                <h1 class="font-0-g branco">Tecnologia nas <span class="font-0-g branco sublinhado">alturas<span class="verde-5">.</span></span></h1>
-                <p class="font-2-m2 cinza-5">Modelos de alta precisão e qualidade, desenvolvidos para quem busca a melhor experiência de voo. Descubra novas perspectivas com a HoverDron.
+                <h1 class="font-0-g branco fadeInDown" data-anime="200">Tecnologia nas <span class="font-0-g branco sublinhado">alturas<span class="verde-5">.</span></span></h1>
+                <p class="font-2-m2 cinza-5 fadeInDown" data-anime="400">Modelos de alta precisão e qualidade, desenvolvidos para quem busca a melhor experiência de voo. Descubra novas perspectivas com a HoverDron.
                     Drones projetados para velocidade, estabilidade e performance profissional.</p>
-                <a href="./drones.html" class="btn">COMECE A PILOTAR
+                <a href="./drones.html" class="btn fadeInDown" data-anime="600">COMECE A PILOTAR
                     <span class="movimento-line"></span>
                 </a>
             </div>
-            <div class="introducao-img">
+            <div class="introducao-img fadeInLeft" data-anime="800">
                 <img src="./src/assets/Drones/Race/Drone corrida preto.jpg" alt="Drone Corrida Preto">
             </div>
         </div>
     </main>
 
-    <article class="drone-lista">
+    <article class="drone-lista fadeInDown" data-anime="900">
         <h2 class="font-1-g2 container">Escolha seu Drone ideal<span class="verde-6">.</span></h2>
 
         <ul>
@@ -78,7 +80,7 @@
     </article>
 
     <article class="controle-bg">
-        <div class="controle-container">
+        <div class="controle-container" data-anime="800">
             <div class="controle-img">
                 <img src="./src/assets/Adicionais/controles2.jpg" alt="Controles" class="img-visib">
                 <span class="font-2-m1 cinza-5 tec">TECNOLOGIA AVANÇADA</span>
@@ -242,6 +244,7 @@
         </div>
     </footer>
 
+    <script src="./src/JS/js-anime/simple-anime.js"></script>
     <script src="./src/JS/script.js"></script>
 </body>
 

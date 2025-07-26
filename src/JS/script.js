@@ -44,3 +44,41 @@ function eventosDuvidas(duvida) {
 }
 
 duvidas.forEach(eventosDuvidas);
+
+//Trocar imagens
+
+const foto = document.querySelectorAll(".hoverdron-img img");
+const fotoContainer = document.querySelector(".hoverdron-img");
+
+function trocarImagem(event) {
+  const img = event.currentTarget;
+  fotoContainer.prepend(img);
+}
+
+function eventoFoto(img) {
+  img.addEventListener("click", trocarImagem);
+}
+
+foto.forEach(eventoFoto);
+
+// Animações
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
+
+const barraDecorativa = document.querySelector(".introducao-conteudo");
+const spanDecorativo = document.querySelectorAll(".sublinhado");
+
+function carregarBarra() {
+  if (barraDecorativa) {
+    barraDecorativa.classList.add("carregado");
+  }
+}
+function carregarSpan() {
+  spanDecorativo.forEach((span) => span.classList.add("carregado"));
+}
+
+window.addEventListener("load", function () {
+  setTimeout(carregarBarra, 1000);
+  setTimeout(carregarSpan, 800);
+});
