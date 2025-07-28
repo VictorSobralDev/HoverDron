@@ -82,3 +82,13 @@ window.addEventListener("load", function () {
   setTimeout(carregarBarra, 1000);
   setTimeout(carregarSpan, 800);
 });
+
+// Menu mobile
+
+const menuIcon = document.getElementById('menu-icon');
+const modal = document.querySelector('.modal');
+
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('open');
+    modal.classList.toggle('active');
+});
