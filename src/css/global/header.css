@@ -2,6 +2,13 @@
   background-color: var(--c12);
 }
 
+.header-bg2 {
+  width: 100%;
+  height: 100%;
+  background-color: var(--c12);
+  position: absolute;
+}
+
 .container-header {
   display: flex;
   flex-wrap: wrap;
@@ -86,4 +93,24 @@
   #txt-logo {
     display: none;
   }
+}
+
+header {
+  background-color: rgba(0, 0, 0, 1);
+  position: sticky;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  transition: background-color 0.3s ease;
+}
+
+.header-fake-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #000;
+  z-index: -3;
+  pointer-events: none;
 }

@@ -12,7 +12,7 @@
 }
 
 @media (max-width: 660px) {
-  .js .fadeInLeft {
+  .js .fadeInLeft.introducao-img img {
     transform: translate3d(0, -40px, 0);
   }
 }

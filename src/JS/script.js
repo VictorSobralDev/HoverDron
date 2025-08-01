@@ -85,10 +85,26 @@ window.addEventListener("load", function () {
 
 // Menu mobile
 
-const menuIcon = document.getElementById('menu-icon');
-const modal = document.querySelector('.modal');
+const menuIcon = document.getElementById("menu-icon");
+const modal = document.querySelector(".modal");
 
-menuIcon.addEventListener('click', () => {
-    menuIcon.classList.toggle('open');
-    modal.classList.toggle('active');
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("open");
+  modal.classList.toggle("active");
 });
+
+// Header fixo
+
+const headers = document.querySelectorAll("header");
+
+function opacidadeHeader() {
+  headers.forEach((header) => {
+    if (window.scrollY > 0) {
+      header.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+    } else {
+      header.style.backgroundColor = "rgba(0, 0, 0, 1)";
+    }
+  });
+}
+
+window.addEventListener("scroll", opacidadeHeader);
